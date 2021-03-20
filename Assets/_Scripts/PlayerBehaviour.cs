@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerBehaviour : MonoBehaviour
 {
-    public CharacterController controller;
+     public CharacterController controller;
 
     [Header("Controls")] 
     public Joystick joystick;

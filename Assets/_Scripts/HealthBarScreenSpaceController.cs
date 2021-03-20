@@ -6,7 +6,7 @@ using UnityEngine.UI;
 [System.Serializable]
 public class HealthBarScreenSpaceController : MonoBehaviour
 {
-    [Header("Health Properties")]
+[Header("Health Properties")]
     [Range(0, 100)]
     public int currentHealth = 100;
     [Range(1, 100)]
@@ -36,6 +36,12 @@ public class HealthBarScreenSpaceController : MonoBehaviour
             healthBarSlider.value = 0;
             currentHealth = 0;
         }
+    }
+
+    public void SetHealth(int healthValue)
+    {
+        healthBarSlider.value = healthValue;
+        currentHealth = healthValue;
     }
 
     public void Reset()
